@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IBM Calculator</title>
+</head>
+
+<body>
+    <form>
+        <form class="bmi">
+            <fieldset style="width = 10%">
+                <legend>Measure BMI</legend>
+                <p>
+                    <label>Height</label>
+                    <input id="weight" type="text" placeholder="Your weight in kilograms" />
+                </p>
+                <p>
+                    <label>Weight</label>
+                    <input id="height" type="text" placeholder="Your height in meters" />
+                </p>
+                <input class="submit" type="button" value="Submit" onclick="bmi()" />
+                <button
+                    onclick="document.getElementById('height').value = '' document.getElementById('weight').value = '' document.getElementById('result').value = 'Reload...'">Clean</button>
+                <p id="result">Reload...</p>
+            </fieldset>
+        </form>
+</body>
+<script>
+    function bmi() {
+        var height = Number(document.getElementById("height").value);
+        var weight = Number(document.getElementById("weight").value);
+        var result = weight / (height * height);
+        document.getElementById("result").innerHTML = "Your bmi score is : " + name + " " + result;
+    }
+</script>
+<style>
+    body {
+        background-color: khaki;
+    }
+</style>
+
+</html>

@@ -12,22 +12,28 @@
     <div class="container">
         <img src="photos/maleGym.jpg" alt="Male Picture" class="image" style="width:100%">
         <div class="middle">
-            <div class="text">Male</div>
+            <button class="btn">Male</button>
         </div>
     </div>
     <div class="container">
         <img src="photos/femaleGym.png" alt="Female Picture" class="image" style="width:100%">
         <div class="middle">
-            <div class="text">Female</div>
+            <button class="btn">Female</button>
         </div>
     </div>
-  
-        <br><img src="photos/ibm.png" alt="picture for IBM">
-        
+    <div class="container"><br></div>
+    <div class="container2">
         <h3 id="quotes">The last three or four reps is what makes the muscle grow. This area of pain divides a
             champion
             from someone who is not a champion"</h3>
-        <h4 id="author">Arnold Schwarzenegger</h4>
+        <h4 id="author"><b>~ Arnold Schwarzenegger ~</b></h4>
+    </div>
+
+    <div class="ibm">
+        <img src="photos/ibm.png" alt="picture for IBM">
+         <button class="CalculateBtn">Calculate</button>
+    </div>
+
 
 </body>
 <style>
@@ -36,7 +42,7 @@
         text-align: center;
     }
 
-    /*  2 Photos aligning horizontally, also adding a button */
+    /*  2 Photos aligning horizontally*/
     .container {
         float: left;
         position: relative;
@@ -86,6 +92,59 @@
 
     #author {
         text-align: center;
+    }
+
+    .container .btn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background-color: #555;
+        color: white;
+        font-size: 16px;
+        padding: 12px 24px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .container .btn:hover {
+        background-color: black;
+    }
+
+    /*IBM*/
+    .ibm {
+        float: inherit;
+        position: relative;
+        width: 100%;
+    }
+
+    .CalculateBtn {
+        background-color: #555;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        color: white;
+        font-size: 16px;
+        padding: 12px 24px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .CalculateBtn:hover {
+        background-color: black;
+    }
+
+    .ibm:hover .image {
+        opacity: 0.3;
+    }
+
+    .ibm:hover .middle {
+        opacity: 1;
     }
 </style>
 

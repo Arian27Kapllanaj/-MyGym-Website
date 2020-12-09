@@ -8,12 +8,56 @@
 </head>
 
 <body>
-
+    <ul>
+        <li><a class="active" href="home.html">Home</a></li>
+        <li><a href="Male.html">Male</a></li>
+        <li><a href="Female.html">Female</a></li>
+        <li><a href="ContactUs.html">Contact Us</a></li>
+    </ul>
 </body>
 
 <style>
     body {
         background-color: khaki;
+    }
+
+    /* Menu Design*/
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+        background-color: #111;
+    }
+
+    .active {
+        background-color: #4CAF50;
+    }
+
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #4CAF50;
+        color: white;
+        text-align: center;
     }
 </style>
 

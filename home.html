@@ -12,6 +12,7 @@
         <li><a class="active" href="home.html">Home</a></li>
         <li><a href="Male.html">Male</a></li>
         <li><a href="Female.html">Female</a></li>
+        <li><a href="ContactUs.html">Contact Us</a></li>
     </ul>
     <h1 id="title">My Gym</h1>
     <div class="container">
@@ -48,11 +49,6 @@
 <style>
     body {
         background-color: khaki;
-    }
-
-    /*  title text align center */
-    #title {
-        text-align: center;
     }
 
     /*  2 Photos aligning horizontally*/
@@ -198,6 +194,25 @@
         color: white;
         text-align: center;
     }
+    /* title animation*/
+    #title{
+        left: 900px;
+        width: 100px;
+        height: 100px;
+        animation-name: animation;
+        animation-duration: 4s;
+        position: relative;
+        text-align: center;
+    }
+
+    @keyframes animation {
+        0%   {background-color:khaki; left:900px;}
+        25%  {background-color:#4CAF50; left:1200px;}
+        50%  {background-color:khaki;; left:900px;}
+        75%  {background-color:#4CAF50; left:700px;}
+        100% {background-color:khaki;; left:900px;}
+    }
+
 </style>
 
 </html>

@@ -19,11 +19,11 @@
             <fieldset style="width = 10%">
                 <legend>Measure BMI</legend>
                 <p>
-                    <label>Height</label>
+                    <label>Weight</label>
                     <input id="weight" type="text" placeholder="Your weight in kilograms" />
                 </p>
                 <p>
-                    <label>Weight</label>
+                    <label>Height</label>
                     <input id="height" type="text" placeholder="Your height in meters" />
                 </p>
                 <input class="submit" type="button" value="Submit" onclick="bmi()" />
@@ -32,6 +32,11 @@
                 <p id="result">Reload...</p>
             </fieldset>
         </form>
+
+        <div class="photo">
+            <br>
+            <img src="photos/bmi2.png" alt="BMI Levels">
+        </div>
 </body>
 <script>
     function bmi() {
@@ -83,6 +88,10 @@
         background-color: #4CAF50;
         color: white;
         text-align: center;
+    }
+
+    #photo{
+        
     }
 </style>
 
